@@ -1,0 +1,96 @@
+* {box-sizing:border-box}
+
+/*контенер для слайдов*/
+.slideshow-container {
+  margin:0 auto;
+  max-width: 1200 px;
+  position: absolute;
+  display: flex; 
+  justify-content: center;
+  width: 100%; height: 100%; 
+}
+
+/*контейнер для кнопок-стрелок*/
+.buttons {
+  max-width: 1500px;
+  position: relative;
+  left: 0; top: 400px; 
+  width: 100%; height: 100%;
+}
+
+/* прячем картинки по умолчанию */
+.mySlides {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0); 
+}
+
+/* кнопки вперёд-назад */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* кнопка вперёд */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* при наведении мыши на кнопку немного затемняем кнопку */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Текст названий времён года */
+.text {
+  color: blue;
+  font-size: 20px;
+  margin-top: 300px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Текст цифры */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Анимация исчезновения при переключении слайдов */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

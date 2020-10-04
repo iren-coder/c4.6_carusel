@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Времена года</title>
+</head>
+<body>
+<!-- Создаём контейнер-коробку для слайдов -->
+<div class="slideshow-container">
+
+  <!-- Создаём контейнер с непосредственно картинками -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/winter.jpg" alt="1"> 
+    <div class="text">Зима</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/spring.jpg" alt="1"> 
+    <div class="text">Весна</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/summer.jpg" alt="1"> 
+    <div class="text">Лето</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/fall.jpg" alt="1"> 
+    <div class="text">Осень</div>
+  </div>
+</div>
+
+<!-- Создаём кнопки перекличения слайдов вперёд-назад -->
+<div class="buttons">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Подключаем скрипт -->
+<script src="./script/script.js"></script>
+</body>
+</html>
